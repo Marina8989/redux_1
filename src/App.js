@@ -1,5 +1,7 @@
 import React from 'react';
 import {Switch, Route, Link} from 'react-router-dom';
+import Coins from './pages/Coins';
+import Portfolio from './pages/Portfolio';
 
 function App(props){
     return(
@@ -25,10 +27,5 @@ function App(props){
 
 export default App;
 
-function Coins(){
-  return <h2>Coins</h2>
-}
 
-function Portfolio(){
-  return <h2>Portfolio</h2>
-}
+
