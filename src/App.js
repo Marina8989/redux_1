@@ -7,24 +7,17 @@ function App(props){
        <nav>
          <ul>
            <li>
-             <Link exact to="/">Home</Link>
+             <Link exact to="/">Coins</Link>
            </li>
            <li>
-             <Link exact to="/about">About</Link>
-           </li>
-           <li>
-             <Link exact to="/users">Users</Link>
+             <Link exact to="/portfolio">Portfolio</Link>
            </li>
          </ul>
        </nav>
 
-       <Switch>
-          <Route exact path="/about" component={About} />
-               
-          <Route exact path="/users" component={Users} />
-              
-          <Route exact path="/" component={Home} />
-             
+       <Switch>     
+          <Route exact path="/portfolio" component={Portfolio} />   
+          <Route exact path="/" component={Coins} />   
        </Switch>
       </>
     )
@@ -32,12 +25,10 @@ function App(props){
 
 export default App;
 
-function Home(){
-  return <h2>Home</h2>
+function Coins(){
+  return <h2>Coins</h2>
 }
-function About(){
-  return <h2>About</h2>
-}
-function Users(){
-  return <h2>Users</h2>
+
+function Portfolio(){
+  return <h2>Portfolio</h2>
 }
