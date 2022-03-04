@@ -19,15 +19,12 @@ function App(props){
        </nav>
 
        <Switch>
-          <Route path="/about" >
-             <About />
-          </Route>  
-          <Route path="/users">
-            <Users />
-          </Route>  
-          <Route path="/">
-            <Home />
-          </Route>  
+          <Route path="/about" component={About} />
+               
+          <Route path="/users" component={Users} />
+              
+          <Route path="/" component={Home} />
+             
        </Switch>
       </>
     )
