@@ -1,4 +1,4 @@
-import {combineReducers, createStore} from 'readux';
+import {combineReducers, createStore} from 'redux';
 
 
 const initialState = 1;
@@ -11,4 +11,4 @@ const reducers = combineReducers({
     counter: counterReducer
 })
 
-export const store =createStore(reducers);
+export const store = createStore(reducers);

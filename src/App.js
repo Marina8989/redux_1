@@ -1,11 +1,16 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
-const App = () => {
+const App = (props) => {
     return (
         <>
-          test
+          <h3>{props.counter}</h3>
         </>
     )
 }
 
-export default App
+const mapStateToProps = (state) => ({
+    counter: state.counter
+})
+
+export default connect(mapStateToProps)(App)
