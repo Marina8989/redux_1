@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect} from 'react-redux';
 
 const App = (props) => {
     return (
@@ -13,4 +13,4 @@ const mapStateToProps = (state) => ({
     counter: state.counter
 })
 
-export default connect(mapStateToProps)(App)
+export default connect(mapStateToProps)(App);
